@@ -1,16 +1,29 @@
 import styled from "styled-components";
 
-export const ApplicationContent = styled.div`
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+export const Sections = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 `
 
-export const Navbar = styled.nav`
+export const Cursor = styled.div`
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 30vw;
-    height: 10vh;
-    background-color: white;
+    top: ${props => props.top}px;
+    left: ${props => props.left}px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    border-radius: 50%;
+    height: 30px;
+    border: 1px solid black;
+    pointer-events: none;
+    box-sizing: border-box;
+    z-index: 990;
+    transition-timing-function: ease-in-out;
+
+    @media screen and (max-width: 1200px)
+    {
+        display: none;
+    }
 `
