@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/michalsukiennik/static/css/main.64df6986.chunk.css",
-    "main.js": "/michalsukiennik/static/js/main.94000907.chunk.js",
-    "main.js.map": "/michalsukiennik/static/js/main.94000907.chunk.js.map",
+    "main.js": "/michalsukiennik/static/js/main.d5a72d3f.chunk.js",
+    "main.js.map": "/michalsukiennik/static/js/main.d5a72d3f.chunk.js.map",
     "runtime-main.js": "/michalsukiennik/static/js/runtime-main.cbd0b932.js",
     "runtime-main.js.map": "/michalsukiennik/static/js/runtime-main.cbd0b932.js.map",
     "static/css/2.ec02d681.chunk.css": "/michalsukiennik/static/css/2.ec02d681.chunk.css",
@@ -23,6 +23,6 @@
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.34060a3c.chunk.js",
     "static/css/main.64df6986.chunk.css",
-    "static/js/main.94000907.chunk.js"
+    "static/js/main.d5a72d3f.chunk.js"
   ]
 }
