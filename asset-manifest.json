@@ -1,24 +1,28 @@
 {
   "files": {
-    "main.css": "/michalsukiennik/static/css/main.ca9c6af6.chunk.css",
-    "main.js": "/michalsukiennik/static/js/main.ade4f6a2.chunk.js",
-    "main.js.map": "/michalsukiennik/static/js/main.ade4f6a2.chunk.js.map",
+    "main.css": "/michalsukiennik/static/css/main.64df6986.chunk.css",
+    "main.js": "/michalsukiennik/static/js/main.bf876d3a.chunk.js",
+    "main.js.map": "/michalsukiennik/static/js/main.bf876d3a.chunk.js.map",
     "runtime-main.js": "/michalsukiennik/static/js/runtime-main.cbd0b932.js",
     "runtime-main.js.map": "/michalsukiennik/static/js/runtime-main.cbd0b932.js.map",
     "static/css/2.ec02d681.chunk.css": "/michalsukiennik/static/css/2.ec02d681.chunk.css",
-    "static/js/2.4afa7df5.chunk.js": "/michalsukiennik/static/js/2.4afa7df5.chunk.js",
-    "static/js/2.4afa7df5.chunk.js.map": "/michalsukiennik/static/js/2.4afa7df5.chunk.js.map",
+    "static/js/2.9c326f60.chunk.js": "/michalsukiennik/static/js/2.9c326f60.chunk.js",
+    "static/js/2.9c326f60.chunk.js.map": "/michalsukiennik/static/js/2.9c326f60.chunk.js.map",
     "index.html": "/michalsukiennik/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/michalsukiennik/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.ca9c6af6.chunk.css.map": "/michalsukiennik/static/css/main.ca9c6af6.chunk.css.map",
-    "static/js/2.4afa7df5.chunk.js.LICENSE.txt": "/michalsukiennik/static/js/2.4afa7df5.chunk.js.LICENSE.txt",
-    "static/media/pexels-koolshooters-6976213 (1).dfc702ae.mp4": "/michalsukiennik/static/media/pexels-koolshooters-6976213 (1).dfc702ae.mp4"
+    "static/css/main.64df6986.chunk.css.map": "/michalsukiennik/static/css/main.64df6986.chunk.css.map",
+    "static/js/2.9c326f60.chunk.js.LICENSE.txt": "/michalsukiennik/static/js/2.9c326f60.chunk.js.LICENSE.txt",
+    "static/media/adv.05a14103.mp4": "/michalsukiennik/static/media/adv.05a14103.mp4",
+    "static/media/branding.0a95c908.mp4": "/michalsukiennik/static/media/branding.0a95c908.mp4",
+    "static/media/circle.008bc6c5.svg": "/michalsukiennik/static/media/circle.008bc6c5.svg",
+    "static/media/pexels-koolshooters-6976213 (1).dfc702ae.mp4": "/michalsukiennik/static/media/pexels-koolshooters-6976213 (1).dfc702ae.mp4",
+    "static/media/website.14a23046.mp4": "/michalsukiennik/static/media/website.14a23046.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.cbd0b932.js",
     "static/css/2.ec02d681.chunk.css",
-    "static/js/2.4afa7df5.chunk.js",
-    "static/css/main.ca9c6af6.chunk.css",
-    "static/js/main.ade4f6a2.chunk.js"
+    "static/js/2.9c326f60.chunk.js",
+    "static/css/main.64df6986.chunk.css",
+    "static/js/main.bf876d3a.chunk.js"
   ]
 }
