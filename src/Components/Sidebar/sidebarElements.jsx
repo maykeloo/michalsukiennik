@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {GrClose} from 'react-icons/gr'
 import {AiOutlineBehanceSquare, AiFillFacebook, AiFillLinkedin, AiOutlineClose} from 'react-icons/ai'
 
 

@@ -9,7 +9,7 @@ const Sidebar = ({visibility, setVisibleHandler}) => {
 
     const menuOptions = ["About me", "Works", "Contact", "Services"];
     const menuOption = menuOptions.map((option) => (
-      <MenuOption style = {{color: 'white'}} onClick = {setVisibleHandler}>{option}</MenuOption>
+      <MenuOption style = {{color: 'white'}} onClick = {setVisibleHandler} to={option} smooth={true} duration={3000}>{option}</MenuOption>
     ));
 
     return (

@@ -1,32 +1,57 @@
 import React, { useState, useEffect } from "react";
-import Header from '../Header/Header'
-import Servieces from '../Services/Servieces'
-import Sidebar from '../Sidebar/Sidebar'
-import { Cursor } from "./applicationElements";
+import About from "../About/About";
+import Header from "../Header/Header";
+import Servieces from "../Services/Servieces";
+import Sidebar from "../Sidebar/Sidebar";
+import { Home } from "./applicationElements";
+
+import { ParallaxProvider } from "react-scroll-parallax";
+import { HashRouter } from "react-router-dom";
+import Works from "../Works/Works";
+import Contact from "../Contanct/Contact";
 
 const Application = () => {
+  const [visibility, setVisible] = useState(false);
+  const setVisibleHandler = () => setVisible(!visibility);
 
-    const [visibility, setVisible] = useState(false);
-    const setVisibleHandler = () => setVisible(!visibility);
+  const setCursorPositionHandler = () => {
+    const cursor = document.querySelector(".cursor");
 
-    const [xValue, setXValue] = useState('50%');
-    const [yValue, setYValue] = useState('50%');
-    
+    document.addEventListener("mousemove", (e) => {
+      cursor.setAttribute(
+        "style",
+        "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+      );
+    });
+  };
 
+  useEffect(() => {
+    setCursorPositionHandler();
+  }, []);
 
-    document.addEventListener('mousemove', e => {
-       setXValue(e.pageX);
-       setYValue(e.pageY);
-    })
+  return (
+    <>
+      <HashRouter>
+        <ParallaxProvider>
+          <Home>
+            <div className="cursor"></div>
+            <Sidebar
+              visibility={visibility}
+              setVisibleHandler={setVisibleHandler}
+            />
+            <Header
+              visibility={visibility}
+              setVisibleHandler={setVisibleHandler}
+            />
+            <Servieces />
+            <About />
+            <Works />
+            <Contact />
+          </Home>
+        </ParallaxProvider>
+      </HashRouter>
+    </>
+  );
+};
 
-    return (
-        <>
-            <Cursor top={yValue} left={xValue}/>
-            <Sidebar visibility={visibility} setVisibleHandler = {setVisibleHandler}/>
-            <Header visibility={visibility} setVisibleHandler = {setVisibleHandler}/>
-            <Servieces/>
-        </>
-    )
-}
-
-export default Application
+export default Application;

@@ -1,0 +1,223 @@
+import styled from "styled-components";
+import {Link} from 'react-router-dom';
+
+import { AiOutlineArrowRight } from "react-icons/ai";
+
+
+export const WorksComponent = styled.section`
+  width: 100vw;
+  margin-top: 40vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+`;
+
+export const Worksbar = styled.div`
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+`;
+
+export const Titlebar = styled.div`
+  width: 100%;
+`;
+
+export const WorksContent = styled.div`
+  width: 100%;
+  height: 80%;
+  position: relative;
+`;
+
+export const Textbar = styled.div`
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 50%;
+  text-align: right;
+
+  @media screen and (max-width: 1200px)
+  {
+    width: 100%;
+    position: relative;
+    height: 15%;
+  }
+`;
+
+export const OpenText = styled.span`
+  font-size: 10em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+
+  @media screen and (max-width: 1200px)
+  {
+    font-size: 4em;
+  }
+`;
+
+export const Columns = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  @media screen and (max-width: 1200px)
+  {
+    flex-direction: column;
+  }
+`
+
+export const TileColumn = styled.div`
+  width: 40%;
+  display:flex;
+  flex-direction: column;
+  gap: 100px;
+
+  @media screen and (max-width: 1200px)
+  {
+    width: 100%;
+  }
+`;
+
+export const Tile = styled(Link)`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    #arrowbox {
+      &:after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #ffc300;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+    }
+
+    #arrow {
+      transform: rotate(-45deg);
+    }
+  }
+`;
+
+export const Videobar = styled.div`
+  width: 100%;
+`;
+
+export const Video = styled.video`
+  width: 100%;
+`;
+export const WorkTitlebar = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const WorkTitle = styled.span`
+  font-family: "Poppins", Halvetica, sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+`;
+
+export const ArrowBox = styled.div.attrs(() => ({
+  id: "arrowbox",
+}))`
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @media screen and (max-width: 1200px)
+  {
+    display: none;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffc300;
+    width: 0px;
+    height: 0px;
+    transition: 0.2s;
+  };
+`;
+
+export const Arrow = styled(AiOutlineArrowRight).attrs(() => ({
+  id: "arrow",
+}))`
+  transition: 0.2s;
+  color: black;
+  font-size: 2em;
+  z-index: 1;
+`;
+
+export const ArrowBoxMobile = styled.div`
+  display: none;
+
+  @media screen and (max-width: 1200px)
+  {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffc300;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
+  }
+
+`;
+
+export const ArrowMobile = styled(AiOutlineArrowRight).attrs(() => ({
+  id: "arrow",
+}))`
+  transition: 0.2s;
+  color: black;
+  font-size: 2em;
+  z-index: 1;
+`;
+
+
+export const Descriptionbar = styled.div`
+  width: 100%;
+`
+export const Description = styled.span`
+  font-family: 'Poppins', Halvetica, sans-serif;
+  font-size: 1.5em;
+`
+
+export const Datebar = styled.div`
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+`
+
+export const Date = styled.span`
+  font-family: 'Poppins', Halvetica, sans-serif;
+  font-size: 1.2em;
+`
+
