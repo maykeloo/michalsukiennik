@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/michalsukiennik/static/css/main.84e1f5c2.chunk.css",
-    "main.js": "/michalsukiennik/static/js/main.edc485c2.chunk.js",
-    "main.js.map": "/michalsukiennik/static/js/main.edc485c2.chunk.js.map",
+    "main.css": "/michalsukiennik/static/css/main.5bd015f0.chunk.css",
+    "main.js": "/michalsukiennik/static/js/main.d8128d50.chunk.js",
+    "main.js.map": "/michalsukiennik/static/js/main.d8128d50.chunk.js.map",
     "runtime-main.js": "/michalsukiennik/static/js/runtime-main.cbd0b932.js",
     "runtime-main.js.map": "/michalsukiennik/static/js/runtime-main.cbd0b932.js.map",
     "static/css/2.ec02d681.chunk.css": "/michalsukiennik/static/css/2.ec02d681.chunk.css",
-    "static/js/2.d8de45e1.chunk.js": "/michalsukiennik/static/js/2.d8de45e1.chunk.js",
-    "static/js/2.d8de45e1.chunk.js.map": "/michalsukiennik/static/js/2.d8de45e1.chunk.js.map",
+    "static/js/2.a5be0681.chunk.js": "/michalsukiennik/static/js/2.a5be0681.chunk.js",
+    "static/js/2.a5be0681.chunk.js.map": "/michalsukiennik/static/js/2.a5be0681.chunk.js.map",
     "index.html": "/michalsukiennik/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/michalsukiennik/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.84e1f5c2.chunk.css.map": "/michalsukiennik/static/css/main.84e1f5c2.chunk.css.map",
-    "static/js/2.d8de45e1.chunk.js.LICENSE.txt": "/michalsukiennik/static/js/2.d8de45e1.chunk.js.LICENSE.txt",
+    "static/css/main.5bd015f0.chunk.css.map": "/michalsukiennik/static/css/main.5bd015f0.chunk.css.map",
+    "static/js/2.a5be0681.chunk.js.LICENSE.txt": "/michalsukiennik/static/js/2.a5be0681.chunk.js.LICENSE.txt",
     "static/media/adv.05a14103.mp4": "/michalsukiennik/static/media/adv.05a14103.mp4",
     "static/media/branding.0a95c908.mp4": "/michalsukiennik/static/media/branding.0a95c908.mp4",
     "static/media/circle.008bc6c5.svg": "/michalsukiennik/static/media/circle.008bc6c5.svg",
@@ -20,15 +20,18 @@
     "static/media/gitfinder.4037c69e.mp4": "/michalsukiennik/static/media/gitfinder.4037c69e.mp4",
     "static/media/ja.ac95963f.png": "/michalsukiennik/static/media/ja.ac95963f.png",
     "static/media/pexels-koolshooters-6976213 (1).dfc702ae.mp4": "/michalsukiennik/static/media/pexels-koolshooters-6976213 (1).dfc702ae.mp4",
+    "static/media/port.14a23046.mp4": "/michalsukiennik/static/media/port.14a23046.mp4",
     "static/media/tip.42622bcb.png": "/michalsukiennik/static/media/tip.42622bcb.png",
+    "static/media/tip.efa6c6d3.mp4": "/michalsukiennik/static/media/tip.efa6c6d3.mp4",
     "static/media/wA.c770afee.png": "/michalsukiennik/static/media/wA.c770afee.png",
+    "static/media/weather.0e21c37e.mp4": "/michalsukiennik/static/media/weather.0e21c37e.mp4",
     "static/media/website.9ba1ba9a.mp4": "/michalsukiennik/static/media/website.9ba1ba9a.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.cbd0b932.js",
     "static/css/2.ec02d681.chunk.css",
-    "static/js/2.d8de45e1.chunk.js",
-    "static/css/main.84e1f5c2.chunk.css",
-    "static/js/main.edc485c2.chunk.js"
+    "static/js/2.a5be0681.chunk.js",
+    "static/css/main.5bd015f0.chunk.css",
+    "static/js/main.d8128d50.chunk.js"
   ]
 }
