@@ -1,8 +1,19 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import {Link} from 'react-router-dom';
 
 import { AiOutlineArrowRight } from "react-icons/ai";
+import {FaRegHandPointer} from 'react-icons/fa'
 
+const rotate = keyframes`
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+  
+`
 
 export const WorksComponent = styled.section`
   width: 100vw;
@@ -11,6 +22,11 @@ export const WorksComponent = styled.section`
   align-items: flex-end;
   justify-content: center;
   position: relative;
+
+  @media screen and (max-width: 1200px)
+  {
+    margin-top: 10vh;
+  }
 `;
 
 export const Worksbar = styled.div`
@@ -32,25 +48,20 @@ export const WorksContent = styled.div`
 `;
 
 export const Textbar = styled.div`
-  top: 0;
-  right: 0;
-  position: absolute;
   width: 50%;
+  height: 35vh;
   text-align: right;
 
   @media screen and (max-width: 1200px)
   {
     width: 100%;
     position: relative;
-    height: 15%;
+    height: 15vh;
   }
 `;
 
 export const OpenText = styled.span`
   font-size: 10em;
-  position: absolute;
-  top: 0;
-  right: 0;
   z-index: 4;
 
   @media screen and (max-width: 1200px)
@@ -80,6 +91,7 @@ export const TileColumn = styled.div`
   @media screen and (max-width: 1200px)
   {
     width: 100%;
+    gap: 0;
   }
 `;
 
@@ -115,18 +127,32 @@ export const Videobar = styled.div`
 
 export const Video = styled.video`
   width: 100%;
+
+  @media screen and (max-width: 1200px)
+  {
+    width: 100%;
+  }
+  
 `;
 export const WorkTitlebar = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 `;
 
 export const WorkTitle = styled.span`
   font-family: "Poppins", Halvetica, sans-serif;
   font-weight: bold;
   font-size: 5em;
+  color: black;
+  text-decoration: underline;
+
+  @media screen and (max-width: 1200px)
+  {
+    font-size: 2em;
+  }
 `;
 
 export const ArrowBox = styled.div.attrs(() => ({
@@ -219,5 +245,50 @@ export const Datebar = styled.div`
 export const Date = styled.span`
   font-family: 'Poppins', Halvetica, sans-serif;
   font-size: 1.2em;
+`
+
+export const CirclesBox = styled.div`
+  cursor: pointer;
+  transition: 0.4s;
+  z-index: 300;
+  margin-top: 30px;
+  position: absolute; 
+  right: 0;
+  bottom: 15vh;
+
+  &:hover {
+      transform: scale(1.2) rotate(45deg);
+    }
+`;
+
+export const Circle = styled(Link)`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd100;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    animation: ${rotate} 7s infinite;
+    display: flex;
+    flex-direction: column;
+
+
+    @media screen and (max-width: 1200px)
+    {
+      width: 5em;
+      height: 5em;
+    }
+`
+
+export const PointerIcon = styled(FaRegHandPointer)`
+  color: white;
+  font-size: 6em;
+
+  
+  @media screen and (max-width: 1200px)
+    {
+      font-size: 2em;
+    }
 `
 

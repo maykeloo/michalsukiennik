@@ -3,7 +3,6 @@ import { Link } from "react-scroll";
 import {FiArrowDown} from 'react-icons/fi'
 
 import darkLogo from "../../images/darkLogo.png";
-import lightLogo from "../../images/lightLogo.png";
 
 export const HeaderContent = styled.section`
   width: 100vw;

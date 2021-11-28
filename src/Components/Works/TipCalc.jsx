@@ -17,7 +17,7 @@ import {
   InformationsTitlebar,
   Title,
 } from "../About/Favorite/favotriteElements";
-import { CirclesBox, Circle, PointerIcon } from "../About/aboutElements";
+import { CirclesBox, Circle, PointerIcon } from "./worksElements";
 
 
 import { Parallax } from "react-scroll-parallax";
@@ -35,19 +35,19 @@ const TipCalc = () => {
   return (
     <>
       <MoreInfoBox>
-        <Content>
+        <Content style ={{position: 'relative'}}>
           <Videobar>
             <InformationsTitlebar>
               <Typebar>Web application</Typebar>
               <Title>Tip Calculator</Title>
-              <CirclesBox style={{ width: '40%'}}>
+              <CirclesBox>
                 <Parallax y={["-90px", "50px"]}>
                   <Circle
                     to="/"
-                    style={{ textDecoration: "none", color: "white", width: '10em', height: '10em' }}
+                    style={{ textDecoration: "none", color: "white" }}
                   >
                     <PointerIcon style={{ fontSize: "2.5em"}}/>
-                    <span style={{ fontSize: "2em", fontFamily: "Poppins"}}>
+                    <span style={{ fontSize: "1em", fontFamily: "Poppins"}}>
                       Back
                     </span>
                   </Circle>
@@ -56,7 +56,7 @@ const TipCalc = () => {
             </InformationsTitlebar>
             <Video 
             data-aos="fade-left " data-aos-delay="200"
-              style={{ width: "60%" }}
+            style ={{width: '60%'}}
               src={tip}
               muted
               autoPlay={true}
@@ -77,7 +77,7 @@ const TipCalc = () => {
               <InfoTile>
                 <InfoTitle>Website</InfoTitle>
                 <Info>
-                  <a href="https://maykeloo.github.io/tipCalculator/" target="_blank">
+                  <a href="https://maykeloo.github.io/tipCalculator/" target="_blank" rel="noreferrer">
                   https://maykeloo.github.io/tipCalculator/
                   </a>
                 </Info>

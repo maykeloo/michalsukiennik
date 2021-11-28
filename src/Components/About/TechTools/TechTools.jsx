@@ -35,7 +35,7 @@ const TechTools = () => {
           </ExamplesBox>
         </TechToolsContent>
       </TechToolsbar>
-      <CirclesBox>
+      <CirclesBox style={{width: '20%'}}>
             <Parallax y={["-90px", "50px"]}>
               <Circle to="/"style={{textDecoration: 'none', color: 'white'}}>
                 <PointerIcon />

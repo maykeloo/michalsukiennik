@@ -6,10 +6,7 @@ import {
   ArrowBoxMobile,
   ArrowMobile,
   Columns,
-  Date,
   Datebar,
-  Description,
-  Descriptionbar,
   OpenText,
   Textbar,
   Tile,
@@ -30,10 +27,11 @@ import gitfinder from "../../videos/gitfinder.mp4";
 import weather from "../../videos/weather.mp4";
 import port from "../../videos/port.mp4";
 import tip from "../../videos/tip.mp4";
-import { Parallax } from "react-scroll-parallax";
 import { Routes, Route } from "react-router";
 import Gitfinder from "./Gitfinder";
 import TipCalc from './TipCalc'
+import WeatherApp from "./WeatherApp";
+import Portfolio from "./Portfolio";
 
 const Works = () => {
   return (
@@ -42,8 +40,6 @@ const Works = () => {
         <Worksbar>
           <Titlebar>
             <Title>Works</Title>
-          </Titlebar>
-          <WorksContent>
             <Textbar>
               <OpenText>
                 <Typewriter
@@ -57,10 +53,14 @@ const Works = () => {
                 />
               </OpenText>
             </Textbar>
+          </Titlebar>
+          <WorksContent>
+            <Tiles />
             <Routes>
-              <Route path="/" element={<Tiles />} />
               <Route path="/gitfinder" element={<Gitfinder />} />
               <Route path="/tipcalc" element={<TipCalc/>} />
+              <Route path="/weather" element={<WeatherApp/>} />
+              <Route path="/portfolio" element={<Portfolio/>} />
             </Routes>
           </WorksContent>
         </Worksbar>
@@ -74,7 +74,6 @@ const Tiles = () => {
     <>
       <Columns>
         <TileColumn style={{ marginTop: "100px" }}>
-          <Parallax y={["200px", "-300px"]}>
             <Tile to="/gitfinder">
               <Videobar>
                 <Video
@@ -90,17 +89,15 @@ const Tiles = () => {
                 <ArrowBox>
                   <Arrow />
                 </ArrowBox>
-              </WorkTitlebar>
-              <Datebar>
                 <ArrowBoxMobile>
                   <ArrowMobile />
                 </ArrowBoxMobile>
+              </WorkTitlebar>
+              <Datebar>
               </Datebar>
             </Tile>
-          </Parallax>
 
-          <Parallax y={["300px", "-100px"]}>
-            <Tile to="/tipcalc">
+            <Tile to="/weather">
               <Videobar>
                 <Video
                   src={weather}
@@ -115,25 +112,16 @@ const Tiles = () => {
                 <ArrowBox>
                   <Arrow />
                 </ArrowBox>
-              </WorkTitlebar>
-              <Descriptionbar>
-                <Description>
-                  My first ever React web app. It is bad, but FIRST! It shows
-                  the weather from all over the world in real time.
-                </Description>
-              </Descriptionbar>
-              <Datebar>
-                <Date>February, 2021</Date>
                 <ArrowBoxMobile>
                   <ArrowMobile />
                 </ArrowBoxMobile>
+              </WorkTitlebar>
+              <Datebar>
               </Datebar>
             </Tile>
-          </Parallax>
         </TileColumn>
 
-        <TileColumn style={{ marginTop: "40vh" }}>
-          <Parallax y={["500px", "-200px"]}>
+        <TileColumn>
             <Tile to="/tipcalc">
               <Videobar>
                 <Video
@@ -149,23 +137,15 @@ const Tiles = () => {
                 <ArrowBox>
                   <Arrow />
                 </ArrowBox>
-              </WorkTitlebar>
-              <Descriptionbar>
-                <Description>
-                  Application for calculating the amount of tips per person.
-                </Description>
-              </Descriptionbar>
-              <Datebar>
-                <Date>March, 2021</Date>
                 <ArrowBoxMobile>
                   <ArrowMobile />
                 </ArrowBoxMobile>
+              </WorkTitlebar>
+              <Datebar>
               </Datebar>
             </Tile>
-          </Parallax>
 
-          <Parallax y={["200px", "-200px"]}>
-            <Tile to="/info">
+            <Tile to="/portfolio">
               <Videobar>
                 <Video
                   src={port}
@@ -180,18 +160,13 @@ const Tiles = () => {
                 <ArrowBox>
                   <Arrow />
                 </ArrowBox>
-              </WorkTitlebar>
-              <Descriptionbar>
-                <Description>First portfolio idea.</Description>
-              </Descriptionbar>
-              <Datebar>
-                <Date>August, 2021</Date>
                 <ArrowBoxMobile>
                   <ArrowMobile />
                 </ArrowBoxMobile>
+              </WorkTitlebar>
+              <Datebar>
               </Datebar>
             </Tile>
-          </Parallax>
         </TileColumn>
       </Columns>
     </>

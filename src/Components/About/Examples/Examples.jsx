@@ -1,40 +1,46 @@
 import React from "react";
+import {
+  Circlebar,
+  Content,
+  Text,
+  Textbox,
+  Video,
+  Videocolumn,
+} from "./examplesElements";
+import { CirclesBox, Circle, PointerIcon } from "../aboutElements";
+
 import { Parallax } from "react-scroll-parallax";
 
-import { Example, ExampleBox } from "./examplesElements";
-
-import port2 from "../../../videos/port2.mp4";
-import tip from "../../../images/tip.png";
-import gitfinder from "../../../images/gifinder.png";
-import sF from "../../../images/wA.png";
-import { Video } from "../../Works/worksElements";
+import video from "../../../videos/webdesign.mp4";
 
 const Examples = () => {
   return (
     <>
-      <ExampleBox top="20%" left="5%">
-        <Parallax y={["40px", "-80px"]}>
-          <Example src={gitfinder} />
-        </Parallax>
-      </ExampleBox>
-
-      <ExampleBox top="80%" left="20%">
-        <Parallax y={["50px", "-100px"]}>
-          <Video muted autoPlay={true} loop="true" playsinline src={port2} />
-        </Parallax>
-      </ExampleBox>
-
-      <ExampleBox top="30%" left="75%">
-        <Parallax y={["50px", "-100px"]}>
-          <Example src={tip} />
-        </Parallax>
-      </ExampleBox>
-
-      <ExampleBox top="70%" left="65%">
-        <Parallax y={["50px", "-100px"]}>
-          <Example src={sF} />
-        </Parallax>
-      </ExampleBox>
+      <Content>
+        <Textbox>
+          <Text>
+            "The most important thought I had was that I must have something
+            else. I didn't want to be content with the general template. I
+            wanted users to take a trip to see what it is like now and what the
+            user experience will be from today."
+          </Text>
+        </Textbox>
+        <Videocolumn>
+          <Video src={video} muted autoPlay={true} loop="true" playsinline />
+        </Videocolumn>
+        <Circlebar>
+          <CirclesBox>
+            <Parallax y={["-90px", "50px"]}>
+              <Circle to="/more" style={{ textDecoration: "none", color: "white" }}>
+                <PointerIcon style={{ fontSize: "2.5em" }} />
+                <span style={{ fontSize: "1em", fontFamily: "Poppins" }}>
+                  More
+                </span>
+              </Circle>
+            </Parallax>
+          </CirclesBox>
+        </Circlebar>
+      </Content>
     </>
   );
 };

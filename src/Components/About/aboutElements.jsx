@@ -114,11 +114,9 @@ export const Text = styled.span`
 export const Showbar = styled.div`
   width: 100%;
   height: 100vh;
+  margin-top: 10vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  justify-content: flex-start;
 `;
 
 export const CirclesBox = styled.div`
@@ -126,6 +124,7 @@ export const CirclesBox = styled.div`
   transition: 0.4s;
   z-index: 300;
   margin-top: 30px;
+  width: 50%;
 
   &:hover {
       transform: scale(1.2) rotate(45deg);
@@ -150,8 +149,6 @@ export const Circle = styled(Link)`
       width: 7em;
       height: 7em;
     }
-
-
 `
 
 export const PointerIcon = styled(FaRegHandPointer)`

@@ -1,35 +1,74 @@
 import styled from "styled-components";
 
 
-export const Example = styled.img`
-  position: absolute;
-  top: ${(props) => props.top};
-  left: ${(props) => props.left};
-  width: 25vw;
-  object-fit: cover;
-  opacity: 0.7;
+export const Content = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 
-  @media screen and (max-width: 1200px) {
-    width: 130px;
-    height: 130px;
-    opacity: 0.5;
+  @media screen and (max-width: 1000px)
+  {
+    flex-direction: column;
+    justify-content: flex-start;
   }
-`;
+`
 
-export const ExampleBox = styled.div`
-  position: absolute;
-  border-radius: 5px;
-  bottom: ${(props) => props.bottom};
-  top: ${(props) => props.top};
-  left: ${(props) => props.left};
-  width: 20vw;
-  object-fit: cover;
-  transform: none;
-  transition: 1s;
+export const Textbox = styled.div`
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
 
-  @media screen and (max-width: 1200px) {
-    width: 130px;
-    height: 130px;
+  @media screen and (max-width: 1000px)
+  {
+    width: 100%;
+    height: 25%;
   }
-`;
+`
 
+export const Text = styled.span`
+  font-family: 'Poppins', Halvetica, sans-serif;
+  font-size: 3vw;
+  line-height: 1em;
+  text-align: justify;
+
+  @media screen and (max-width: 1000px)
+  {
+    font-size: 6vw;
+  }
+`
+
+export const Videocolumn = styled.div`
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+
+  @media screen and (max-width: 1000px)
+  {
+    width: 100%;
+    height: 60%;
+  }
+`
+
+export const Video = styled.video`
+  width: 100%;
+  object-fit: cover;
+  height: 80%;
+`
+
+export const Circlebar = styled.div`
+  width: 30%;
+  height: 40%;
+
+  @media screen and (max-width: 1000px)
+  {
+    height: 20%;
+    position: absolute;
+    bottom: 5vh;
+    right: 0;
+  }
+`

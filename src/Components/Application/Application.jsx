@@ -14,7 +14,8 @@ const Application = () => {
   const [visibility, setVisible] = useState(false);
   const setVisibleHandler = () => setVisible(!visibility);
 
-  const setCursorPositionHandler = () => {
+
+  useEffect(() => {
     const cursor = document.querySelector(".cursor");
 
     document.addEventListener("mousemove", (e) => {
@@ -23,10 +24,6 @@ const Application = () => {
         "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
       );
     });
-  };
-
-  useEffect(() => {
-    setCursorPositionHandler();
   }, []);
 
   return (

@@ -17,7 +17,7 @@ import {
   InformationsTitlebar,
   Title,
 } from "../About/Favorite/favotriteElements";
-import { CirclesBox, Circle, PointerIcon } from "../About/aboutElements";
+import { CirclesBox, Circle, PointerIcon } from "./worksElements";
 
 
 import { Parallax } from "react-scroll-parallax";
@@ -26,9 +26,6 @@ import "aos/dist/aos.css";
 
 
 import gitfinder from "../../videos/gitfinder.mp4";
-import weather from "../../videos/weather.mp4";
-import port from "../../videos/port.mp4";
-import tip from "../../videos/tip.mp4";
 
 const Gitfinder = () => {
 
@@ -39,19 +36,19 @@ const Gitfinder = () => {
   return (
     <>
       <MoreInfoBox>
-        <Content>
+        <Content data-aos="fade-up " data-aos-delay="200">
           <Videobar>
             <InformationsTitlebar>
               <Typebar>Web application</Typebar>
               <Title>Gitfinder</Title>
-              <CirclesBox style={{ width: '40%'}}>
+              <CirclesBox>
                 <Parallax y={["-90px", "50px"]}>
                   <Circle
                     to="/"
-                    style={{ textDecoration: "none", color: "white", width: '10em', height: '10em' }}
+                    style={{ textDecoration: "none", color: "white" }}
                   >
                     <PointerIcon style={{ fontSize: "2.5em"}}/>
-                    <span style={{ fontSize: "2em", fontFamily: "Poppins"}}>
+                    <span style={{ fontSize: "1em", fontFamily: "Poppins"}}>
                       Back
                     </span>
                   </Circle>
@@ -59,8 +56,7 @@ const Gitfinder = () => {
               </CirclesBox>
             </InformationsTitlebar>
             <Video 
-            data-aos="fade-left " data-aos-delay="200"
-              style={{ width: "60%" }}
+            style ={{width: '60%'}}
               src={gitfinder}
               muted
               autoPlay={true}
@@ -81,7 +77,7 @@ const Gitfinder = () => {
               <InfoTile>
                 <InfoTitle>Website</InfoTitle>
                 <Info>
-                  <a href="https://maykeloo.github.io/gitapi/" target="_blank">
+                  <a href="https://maykeloo.github.io/gitapi/" target="_blank" rel="noreferrer">
                     https://maykeloo.github.io/gitapi/
                   </a>
                 </Info>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Favoritebar = styled.div`
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;

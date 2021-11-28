@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import {
   AboutContent,
   AboutContentBox,
@@ -25,6 +25,7 @@ import Examples from "./Examples/Examples";
 import TechTools from "./TechTools/TechTools";
 import Favorite from "./Favorite/Favorite";
 import { Route, Routes } from "react-router";
+import { Example } from "./Examples/examplesElements";
 
 const About = () => {
 
@@ -89,26 +90,8 @@ const AboutRoute = () => {
     }, []);
 
   return (
-    <Showbar data-aos="fade-up" data-aos-delay="200">
-      <Textbar>
-        <Parallax y={["-80px", "60px"]}>
-          <Text style={{ zIndex: "3", fontSize: "1.7em", fontStyle: 'italic', fontWeight: 'bold' }}>
-            "The most important thought I had was that I must have something
-            else. I didn't want to be content with the general template. I
-            wanted users to take a trip to see what it is like now and what the
-            user experience will be from today."
-          </Text>
-        </Parallax>
-      </Textbar>
-      <CirclesBox>
-        <Parallax y={["-90px", "50px"]}>
-          <Circle to="/more" style={{textDecoration: 'none', color: 'white'}}>
-            <PointerIcon />
-            <span style={{fontSize: '2em', fontFamily: 'Poppins'}}>More</span>
-          </Circle>
-        </Parallax>
-      </CirclesBox>
-      <Examples />
+    <Showbar data-aos="fade-up" ata-aos-delay="200">
+      <Examples/>
     </Showbar>
   );
 };
