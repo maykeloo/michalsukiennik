@@ -1,6 +1,6 @@
 /* eslint-disable no-duplicate-case */
 /* eslint-disable default-case */
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import {
   ErrorBar,
@@ -14,6 +14,9 @@ import {
   Submit,
   Text,
 } from "./contactElements";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Form = () => {
   const formValidation = () => {
@@ -105,7 +108,12 @@ const Form = () => {
     phoneError: "The telephone number must consist of numbers.",
   };
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
+    
     <>
       <FormContent>
         <LeftSize>
@@ -113,10 +121,10 @@ const Form = () => {
             ref={form}
             onSubmit={sendMail}
             noValidate
-            style={{ width: "80%", height: "100%", zIndex: '100' }}
+            style={{ width: "100%", height: "100%", zIndex: '100' }}
           >
             <FormBox>
-              <FormLabel>
+              <FormLabel data-aos="fade-left" data-aos-delay="200">
                 <Input
                   type="name"
                   name="name"
@@ -130,7 +138,7 @@ const Form = () => {
                   </ErrorBar>
                 )}
               </FormLabel>
-              <FormLabel>
+              <FormLabel data-aos="fade-left" data-aos-delay="400">
                 <Input
                   type="email"
                   name="email"
@@ -144,7 +152,7 @@ const Form = () => {
                   </ErrorBar>
                 )}
               </FormLabel>
-              <FormLabel>
+              <FormLabel data-aos="fade-left" data-aos-delay="600">
                 <Input
                   type="phone"
                   name="phone"
@@ -158,10 +166,10 @@ const Form = () => {
                   </ErrorBar>
                 )}
               </FormLabel>
-              <FormLabel>
+              <FormLabel data-aos="fade-left" data-aos-delay="800">
                 <Text placeholder="Text" name="message" />
               </FormLabel>
-              <FormLabel>
+              <FormLabel data-aos="fade-left" data-aos-delay="1000">
                 <Submit type="submit" value="Send message" />
                 {sent && (
                   <ErrorBar>

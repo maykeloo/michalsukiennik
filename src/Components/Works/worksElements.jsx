@@ -22,11 +22,6 @@ export const WorksComponent = styled.section`
   align-items: flex-end;
   justify-content: center;
   position: relative;
-
-  @media screen and (max-width: 1200px)
-  {
-    margin-top: 10vh;
-  }
 `;
 
 export const Worksbar = styled.div`
@@ -61,7 +56,7 @@ export const Textbar = styled.div`
 `;
 
 export const OpenText = styled.span`
-  font-size: 10em;
+  font-size: 7em;
   z-index: 4;
 
   @media screen and (max-width: 1200px)
@@ -130,6 +125,7 @@ export const Video = styled.video`
 
   @media screen and (max-width: 1200px)
   {
+    margin-top: 30px;
     width: 100%;
   }
   
@@ -145,7 +141,7 @@ export const WorkTitlebar = styled.div`
 export const WorkTitle = styled.span`
   font-family: "Poppins", Halvetica, sans-serif;
   font-weight: bold;
-  font-size: 5em;
+  font-size: 3em;
   color: black;
   text-decoration: underline;
 

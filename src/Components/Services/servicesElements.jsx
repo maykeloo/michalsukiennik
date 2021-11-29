@@ -43,6 +43,7 @@ export const ServiceBox = styled.div`
 
   @media screen and (max-width: 1200px) {
     height: 90vh;
+    margin-top: 40px;
   }
 `;
 
@@ -53,7 +54,6 @@ export const ServiceTitle = styled.h2`
 
 export const TextBox = styled.div`
   width: 100%;
-  height: 40%;
   display: flex;
   justify-content: space-around;
 
@@ -64,11 +64,11 @@ export const TextBox = styled.div`
 `;
 
 export const Text = styled.span`
-  font-size: 1.9em;
+  font-size: 2vw;
   font-family: "Poppins", Halvetica, sans-serif;
 
   @media screen and (max-width: 1200px) {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 `;
 

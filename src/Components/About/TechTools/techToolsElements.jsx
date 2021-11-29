@@ -36,7 +36,7 @@ export const TechToolsContent = styled.div`
 `
 
 export const InformationsTitlebar = styled.div`
-    width: 30%;
+    width: 40%;
 
     @media screen and (max-width: 1300px)
     {
@@ -71,7 +71,7 @@ export const Column = styled.div`
 `
 
 export const Row = styled.div`
-    font-size: 1.5em;
+    font-size: 1.5vw;
     font-family: 'Poppins', Halvetica, sans-serif;
     color: #999999;
     margin: 0;

@@ -2,13 +2,10 @@ import React, { useEffect } from "react";
 import {
   AboutContent,
   AboutContentBox,
-  Circle,
-  CirclesBox,
   Image,
   Name,
   Namebar,
   Namebox,
-  PointerIcon,
   Showbar,
   Text,
   Textbar,
@@ -16,7 +13,6 @@ import {
   Titlebar,
 } from "./aboutElements";
 
-import { Parallax } from "react-scroll-parallax";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -25,9 +21,12 @@ import Examples from "./Examples/Examples";
 import TechTools from "./TechTools/TechTools";
 import Favorite from "./Favorite/Favorite";
 import { Route, Routes } from "react-router";
-import { Example } from "./Examples/examplesElements";
 
 const About = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
     <>

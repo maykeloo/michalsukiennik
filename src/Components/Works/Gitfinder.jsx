@@ -20,7 +20,6 @@ import {
 import { CirclesBox, Circle, PointerIcon } from "./worksElements";
 
 
-import { Parallax } from "react-scroll-parallax";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -36,13 +35,12 @@ const Gitfinder = () => {
   return (
     <>
       <MoreInfoBox>
-        <Content data-aos="fade-up " data-aos-delay="200">
+        <Content data-aos="fade-up" data-aos-delay="200">
           <Videobar>
             <InformationsTitlebar>
               <Typebar>Web application</Typebar>
               <Title>Gitfinder</Title>
               <CirclesBox>
-                <Parallax y={["-90px", "50px"]}>
                   <Circle
                     to="/"
                     style={{ textDecoration: "none", color: "white" }}
@@ -52,15 +50,15 @@ const Gitfinder = () => {
                       Back
                     </span>
                   </Circle>
-                </Parallax>
               </CirclesBox>
             </InformationsTitlebar>
             <Video 
+            data-aos="fade-left" data-aos-delay="200"
             style ={{width: '60%'}}
               src={gitfinder}
               muted
               autoPlay={true}
-              loop="true"
+              loop={true}
               playsinline
             />
           </Videobar>

@@ -44,7 +44,7 @@ const Adv = () => {
           </DescriptonBox>
         </TextBox>
         <VideoBox data-aos="fade-left">
-          <Video src={adv} muted autoPlay="true" loop="true" />
+          <Video src={adv} muted autoPlay={true} loop={true} />
         </VideoBox>
       </ServiceBox>
       </Section>

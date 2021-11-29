@@ -40,7 +40,7 @@ const Website = () => {
             </DescriptonBox>
           </TextBox>
           <VideoBox data-aos="fade-left">
-            <Video src={website} muted autoPlay="true" loop="true" />
+            <Video src={website} muted autoPlay={true} loop={true} />
           </VideoBox>
         </ServiceBox>
       </Section>

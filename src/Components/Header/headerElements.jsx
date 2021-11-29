@@ -26,7 +26,7 @@ export const Navbar = styled.nav`
   }
 `;
 export const ContentBox = styled.div`
-  width: 60%;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -44,9 +44,10 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: flex-start;
 `;
-export const Logobar = styled.div`
+export const Logobar = styled(Link)`
   display: flex;
   justify-content: center;
+  cursor: pointer;
 `;
 
 export const Logo = styled.img.attrs(() => ({
@@ -121,6 +122,7 @@ export const Line3 = styled.span`
 export const MenuTitle = styled.h3`
   font-weight: bold;
   margin: 0;
+  font-size: 1.1vw;
   margin-bottom: 30px;
 `;
 
@@ -128,6 +130,7 @@ export const MenuOption = styled(Link)`
   margin-top: 10px;
   cursor: pointer;
   transition: 0.2s;
+  font-size: 1.1vw;
   font-family: 'Poppins',Halvetica, sans-serif;
 
   &:hover {

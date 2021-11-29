@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link} from 'react-scroll'
 import {AiOutlineBehanceSquare, AiFillFacebook, AiFillLinkedin, AiOutlineClose} from 'react-icons/ai'
 
 
@@ -39,7 +40,7 @@ export const SocialBar = styled.div`
     justify-content: space-around;
 `
 
-export const Link = styled.a``
+export const LinkA = styled.a``
 
 export const IconFB = styled(AiFillFacebook)`
     color: white;
@@ -55,7 +56,7 @@ export const IconBH = styled(AiOutlineBehanceSquare)`
     color: white;
     font-size: 24px;
 `
-export const Logobar = styled.div`
+export const Logobar = styled(Link)`
     width: 40%;
     margin-bottom: 30px;
     display: flex;

@@ -54,12 +54,12 @@ const Header = ({ setVisibleHandler, visibility }) => {
 
   return (
     <>
-      <ScrollContainer>
-        <HeaderContent>
+      <ScrollContainer >
+        <HeaderContent name='top'>
           <ContentBox>
             <Content>
               <Navbar data-aos="fade-down">
-                <Logobar>
+                <Logobar to='top' smooth={true} duration={3000}>
                   <Logo />
                 </Logobar>
                 <Animator animation={MoveOut(0, -300)}>
@@ -105,7 +105,7 @@ const Header = ({ setVisibleHandler, visibility }) => {
                 src={video}
                 muted
                 autoPlay={true}
-                loop="true"
+                loop={true}
                 playsinline
               />
             </VideoBox>

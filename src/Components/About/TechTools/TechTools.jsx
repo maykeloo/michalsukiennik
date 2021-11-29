@@ -25,7 +25,7 @@ const TechTools = () => {
         <TechToolsContent>
           <InformationsTitlebar>
             <Title>
-              Tech & <span style={{ marginLeft: "10vw" }}>Tools</span>
+              Tech & Tools
             </Title>
           </InformationsTitlebar>
           <ExamplesBox>
@@ -39,7 +39,7 @@ const TechTools = () => {
             <Parallax y={["-90px", "50px"]}>
               <Circle to="/"style={{textDecoration: 'none', color: 'white'}}>
                 <PointerIcon />
-                <span style={{fontSize: '2em', fontFamily: 'Poppins'}}>Back</span>
+                <span style={{ fontSize: "1.5em", fontFamily: "Poppins" }}>Back</span>
               </Circle>
             </Parallax>
           </CirclesBox>

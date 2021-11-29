@@ -23,8 +23,7 @@ export const Textbox = styled.div`
 
   @media screen and (max-width: 1000px)
   {
-    width: 100%;
-    height: 25%;
+    display: none;
   }
 `
 
@@ -36,7 +35,7 @@ export const Text = styled.span`
 
   @media screen and (max-width: 1000px)
   {
-    font-size: 6vw;
+    font-size: 1em;
   }
 `
 
@@ -49,8 +48,7 @@ export const Videocolumn = styled.div`
 
   @media screen and (max-width: 1000px)
   {
-    width: 100%;
-    height: 60%;
+    display: none;
   }
 `
 
@@ -58,6 +56,11 @@ export const Video = styled.video`
   width: 100%;
   object-fit: cover;
   height: 80%;
+
+  @media screen and (max-width: 1200px)
+  {
+  height: 30vh;
+  }
 `
 
 export const Circlebar = styled.div`

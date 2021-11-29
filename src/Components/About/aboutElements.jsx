@@ -113,10 +113,18 @@ export const Text = styled.span`
 `;
 export const Showbar = styled.div`
   width: 100%;
+  padding: 20px;
   height: 100vh;
   margin-top: 10vh;
   display: flex;
   justify-content: flex-start;
+
+  @media screen and (max-width: 1200px)
+  {
+    height: 0%;
+    padding: 0;
+    background-color: transparent;
+  }
 `;
 
 export const CirclesBox = styled.div`
@@ -129,6 +137,11 @@ export const CirclesBox = styled.div`
   &:hover {
       transform: scale(1.2) rotate(45deg);
     }
+
+    @media screen and (max-width: 1200px)
+    {
+      margin-top: 0px;
+    }
 `;
 
 export const Circle = styled(Link)`
@@ -136,8 +149,8 @@ export const Circle = styled(Link)`
     justify-content: center;
     align-items: center;
     background-color: #ffd100;
-    width: 15em;
-    height: 15em;
+    width: 10vw;
+    height: 10vw;
     border-radius: 50%;
     animation: ${rotate} 7s infinite;
     display: flex;
@@ -153,7 +166,7 @@ export const Circle = styled(Link)`
 
 export const PointerIcon = styled(FaRegHandPointer)`
   color: white;
-  font-size: 6em;
+  font-size: 2.5vw;
 
   
   @media screen and (max-width: 1200px)

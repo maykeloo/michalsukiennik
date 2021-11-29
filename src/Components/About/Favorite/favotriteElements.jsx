@@ -21,7 +21,6 @@ export const Title = styled.h3`
 
 export const FavoriteContent = styled.div`
     width: 90%;
-    height: 100%;
     display: flex;
     justify-content: space-between;
 
@@ -68,7 +67,7 @@ export const Row = styled.li`
 export const Left = styled.p`
     font-family: 'Poppins', Halvetica, sans-serif;
     width: 30%;
-    font-size: 1.3em;
+    font-size: 1.3vw;
     color: #999999;
     position: relative;
 
@@ -76,6 +75,8 @@ export const Left = styled.p`
     {
         margin: 0;
         width: 100%;
+        font-size: 1.3em;
+
     }
 
     &:before {
@@ -94,13 +95,15 @@ export const Left = styled.p`
 export const Rigth = styled.p`
     margin-left: 30px;
     font-family: 'Poppins', Halvetica, sans-serif;
-    font-size: 1.3em;
+    font-size: 1.3vw;
     font-weight: bold;
 
     
     @media screen and (max-width: 1200px)
     {
         margin: 0;
+        font-size: 1.3em;
+
     }
 
     > a {

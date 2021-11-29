@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Title } from "../About/aboutElements";
 import {
   Arrow,
@@ -22,6 +22,8 @@ import {
 } from "./worksElements";
 
 import Typewriter from "typewriter-effect";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import gitfinder from "../../videos/gitfinder.mp4";
 import weather from "../../videos/weather.mp4";
@@ -33,13 +35,19 @@ import TipCalc from './TipCalc'
 import WeatherApp from "./WeatherApp";
 import Portfolio from "./Portfolio";
 
+
 const Works = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <>
       <WorksComponent name="Works">
         <Worksbar>
           <Titlebar>
-            <Title>Works</Title>
+            <Title data-aos="fade-up" data-aos-delay="200">Works</Title>
             <Textbar>
               <OpenText>
                 <Typewriter
@@ -70,17 +78,22 @@ const Works = () => {
 };
 
 const Tiles = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <>
       <Columns>
         <TileColumn style={{ marginTop: "100px" }}>
-            <Tile to="/gitfinder">
+            <Tile to="/gitfinder" data-aos="fade-up" data-aos-delay="200">
               <Videobar>
                 <Video
                   src={gitfinder}
                   muted
                   autoPlay={true}
-                  loop="true"
+                  loop={true}
                   playsinline
                 />
               </Videobar>
@@ -97,13 +110,13 @@ const Tiles = () => {
               </Datebar>
             </Tile>
 
-            <Tile to="/weather">
+            <Tile to="/weather" data-aos="fade-up" data-aos-delay="200">
               <Videobar>
                 <Video
                   src={weather}
                   muted
                   autoPlay={true}
-                  loop="true"
+                  loop={true}
                   playsinline
                 />
               </Videobar>
@@ -122,13 +135,13 @@ const Tiles = () => {
         </TileColumn>
 
         <TileColumn>
-            <Tile to="/tipcalc">
+            <Tile to="/tipcalc" data-aos="fade-up" data-aos-delay="400">
               <Videobar>
                 <Video
                   src={tip}
                   muted
                   autoPlay={true}
-                  loop="true"
+                  loop={true}
                   playsinline
                 />
               </Videobar>
@@ -145,13 +158,13 @@ const Tiles = () => {
               </Datebar>
             </Tile>
 
-            <Tile to="/portfolio">
+            <Tile to="/portfolio" data-aos="fade-up" data-aos-delay="400">
               <Videobar>
                 <Video
                   src={port}
                   muted
                   autoPlay={true}
-                  loop="true"
+                  loop={true}
                   playsinline
                 />
               </Videobar>

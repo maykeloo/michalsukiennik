@@ -15,7 +15,7 @@ export const MoreInfoBox = styled.div`
 
 export const Content = styled.div`
     width: 80%;
-    height: 100%;
+    height: 80%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -24,6 +24,7 @@ export const Content = styled.div`
 
 export const Videobar = styled.div`
   height: 30%;
+  margin-top: 50px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -35,7 +36,6 @@ export const Videobar = styled.div`
 `
 
 export const Typebar = styled.div`
-  width: 60%;
   margin-bottom: 40px;
   font-size: 2em;
   font-family: 'Poppins';

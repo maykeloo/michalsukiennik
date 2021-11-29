@@ -26,7 +26,7 @@ const Favorite = () => {
         <FavoriteContent>
           <InformationsTitlebar>
             <Title>
-              Current <span style={{ marginLeft: "10vw" }}>Favorites</span>
+              Current Favorites
             </Title>
           </InformationsTitlebar>
           <Table />

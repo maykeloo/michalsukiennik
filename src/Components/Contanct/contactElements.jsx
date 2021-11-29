@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const ContactComponent = styled.section`
-    margin-top: 20vh;
-    height: 100vh;
+    margin-top: 40vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 `
 export const Content = styled.div`
     width: 80%;
@@ -14,14 +14,23 @@ export const Content = styled.div`
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid grey;
+
+    @media screen and (max-width: 1200px)
+    {
+        flex-direction: column;
+    }
 `
 
 export const Leftside = styled.div`
-    width: 40%;
-    height: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (max-width: 1200px)
+    {
+        width: 100%;
+    }
 `
 
 export const OpenTextbar = styled.div`
@@ -40,17 +49,32 @@ export const SmallContactbar = styled.div`
 export const City = styled.span`
     font-family: 'Poppins', Halvetica, sans-serif;
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 0.7vw;
+
+    @media screen and (max-width: 1200px)
+    {
+        font-size: 18px;
+    }
 `
 
 export const ContactDate = styled.span`
     font-family: 'Poppins', Halvetica, sans-serif;
-    font-size: 0.8em;
+    font-size: 0.7vw;
+
+    @media screen and (max-width: 1200px)
+    {
+        font-size: 16px;
+    }
 `
 
 export const FormSide = styled.div`
     height: 100%;
     width: 40%;
+
+    @media screen and (max-width: 1200px)
+    {
+        width: 100%;
+    }
 `
 
 
@@ -62,7 +86,7 @@ export const FormContent = styled.div`
 
     @media screen and (max-width: 1200px){
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 `
 
@@ -93,14 +117,15 @@ export const FormLabel = styled.div`
 `
 
 export const Input = styled.input`
-    padding: 5px 10px;
+    padding: 5px 0px;
     border: 0;
     width: 100%;
+    border-radius: 0;
     border-bottom: 1px solid black;
     color: black;
-    background-color: #f4f1de;
+    background-color: transparent;
     outline: none;
-    font-size: 16px;
+    font-size: 1.3vw;
     margin-top: 20px;
     -moz-appearance: textfield;
 
@@ -118,32 +143,45 @@ export const Input = styled.input`
         color: black;
         font-size: 18px;
     }
+
+    @media screen and (max-width: 1200px)
+    {
+        font-size: 16px;
+    }
 `
 
 export const Text = styled.textarea`
     width: 100%;
-    padding: 25px;
+    padding: 5px 0px;
     background-color: transparent;
-    border: 1px solid black;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid black;
     color: black;
     outline: none;
-    font-size: 14px;
+    font-size: 1.2vw;
     margin-top: 20px;
 
     &::placeholder {
-        color: black;
+        color: grey;
         font-size: 18px;
+    }
+
+    @media screen and (max-width: 1200px)
+    {
+        font-size: 14px;
     }
 `
 
 export const Submit = styled.input`
     width: 100%;
     padding: 5px;
+    border-radius: 0;
     background-color: #ffc300;
     border: 3px solid #ffc300;
     color: black;
     outline: none;
-    font-size: 24px;
+    font-size: 1.5vw;
     font-weight: bold;
     transition: 0.3s;
     cursor: pointer;  
@@ -153,6 +191,11 @@ export const Submit = styled.input`
         background-color: #F1FAEE;
         color: #ffc300;
         border: 3px solid #ffc300;
+    }
+
+    @media screen and (max-width: 1200px)
+    {
+        font-size: 20px;
     }
 
 `
@@ -171,3 +214,19 @@ export const ErrowText = styled.span`
 export const SentText = styled.span`
     color: green;
 `
+export const Designbar = styled.div`
+margin-top: 15px;
+height: 20vh;
+width: 80%;
+font-family: 'Poppins', Halvetica, sans-serif;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+font-size: 0.7vw;
+
+@media screen and (max-width: 1200px)
+{
+    font-size: 18px;
+}
+`
+

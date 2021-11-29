@@ -45,12 +45,12 @@ const Branding = () => {
           </DescriptonBox>
           <DescriptonBox>
             <Text>
-            A good idea without thoughtful implementation is worth nothing. To gain the trust and loyalty of customers, we need a thorough market analysis, developing customer paths and establishing brand differentiators from the competition.  Creative activities are ALWAYS based on a solid strategy.
+            A good idea without thoughtful implementation is worth nothing. Creative activities are ALWAYS based on a solid strategy.
             </Text>
           </DescriptonBox>
         </TextBox>
         <VideoBox data-aos="fade-left">
-          <Video src={branding} muted autoPlay="true" loop="true" />
+          <Video src={branding} muted autoPlay={true} loop={true} />
         </VideoBox>
       </ServiceBox>
       </Section>
