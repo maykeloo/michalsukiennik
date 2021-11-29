@@ -136,6 +136,11 @@ export const MenuOption = styled(Link)`
   &:hover {
     letter-spacing: 5px;
   }
+
+  @media screen and (max-width: 1200px)
+  {
+    font-size: 1.5em;
+  }
 `;
 
 export const VideoBox = styled.div`
