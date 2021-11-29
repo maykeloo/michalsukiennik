@@ -31,7 +31,7 @@ const Examples = () => {
             user experience will be from today."
           </Text>
         </Textbox>
-        <Videocolumn data-aos="fade-up" ata-aos-delay="400">
+        <Videocolumn>
           <Video src={video} muted autoPlay={true} loop="true" playsinline />
         </Videocolumn>
         <Circlebar>

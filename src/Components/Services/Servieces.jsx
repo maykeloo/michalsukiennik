@@ -26,7 +26,7 @@ const Servieces = () => {
 
   return (
     <>
-      <SerivcesContent name="Services" data-aos="fade-right">
+      <SerivcesContent name="Services">
         <ServicesTitleBar>
           <TitleBar data-aos="fade-up">
             <Parallax x={[5,-5]}>

@@ -26,7 +26,7 @@ const Branding = () => {
 
   return (
     <>
-    <Section name = 'branding' data-aos="fade-up">
+    <Section name = 'branding'>
       <ServiceBox>
         <CirclesBox to = 'adv' smooth = {true} duration = {1500}>
           <Circle src={circle} />
@@ -49,7 +49,7 @@ const Branding = () => {
             </Text>
           </DescriptonBox>
         </TextBox>
-        <VideoBox data-aos="fade-left">
+        <VideoBox>
           <Video src={branding} muted autoPlay={true} loop={true} />
         </VideoBox>
       </ServiceBox>

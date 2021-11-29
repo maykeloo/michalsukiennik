@@ -23,7 +23,7 @@ const Adv = () => {
 
   return (
     <>
-    <Section name ='adv' data-aos="fade-up">
+    <Section name ='adv'>
       <ServiceBox>
         <Parallax x={[-5,5]}>
         <ServiceTitle>Advertisements</ServiceTitle>
@@ -43,7 +43,7 @@ const Adv = () => {
             </Text>
           </DescriptonBox>
         </TextBox>
-        <VideoBox data-aos="fade-left">
+        <VideoBox>
           <Video src={adv} muted autoPlay={true} loop={true} />
         </VideoBox>
       </ServiceBox>
